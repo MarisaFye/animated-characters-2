@@ -20,7 +20,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     tiles.setTileAt(tiles.locationInDirection(tiles.locationOfSprite(mySprite), CollisionDirection.Bottom), assets.tile`energy`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`ring`, function (sprite, location) {
-    tiles.setTileAt(location, assets.tile`ring`)
+    tiles.setTileAt(location, assets.tile`transparency16`)
     info.changeScoreBy(1)
 })
 scene.onOverlapTile(SpriteKind.Projectile, assets.tile`boulder`, function (sprite, location) {
